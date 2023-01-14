@@ -5,9 +5,9 @@ from datetime import date
 from sqlalchemy import ForeignKey, Integer
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm import relationship, declarative_base
+from sqlalchemy.orm import relationship
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
-from forms import CreatePostForm, CreateUser, LoginUser, CommentForm
+from forms import CreatePostForm, CreateUser, LoginUser, CommentForm, Email
 from flask_gravatar import Gravatar
 from functools import wraps
 import hashlib
